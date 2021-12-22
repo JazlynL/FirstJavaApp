@@ -10,6 +10,7 @@ public class Main {
         System.out.println(getFirstValue(new int[]{2, 4, 6, 8, 10}));
         System.out.println(addition(2 ));
         System.out.println(search(new int[]{2, 4, 6, 8, 10}, 8));
+        System.out.println(convert(6));
 
     }
 
@@ -31,6 +32,12 @@ public class Main {
 
         }
         return -1;
+    }
+
+    public static int convert(int minutes) {
+        int seconds = minutes*60;
+        return seconds;
+
     }
 
 
