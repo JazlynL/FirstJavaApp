@@ -11,6 +11,7 @@ public class Main {
         System.out.println(addition(2 ));
         System.out.println(search(new int[]{2, 4, 6, 8, 10}, 8));
         System.out.println(convert(6));
+        System.out.println(giveMeSomething("is cooking"));
 
     }
 
@@ -40,6 +41,10 @@ public class Main {
 
     }
 
+    public static String giveMeSomething(String a) {
+        a = "something " + a ;
+        return a ;
 
+    }
      }
 
