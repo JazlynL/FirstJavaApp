@@ -12,6 +12,8 @@ public class Main {
         System.out.println(search(new int[]{2, 4, 6, 8, 10}, 8));
         System.out.println(convert(6));
         System.out.println(giveMeSomething("is cooking"));
+        System.out.println(reverse(false));
+        System.out.println(countWords("It's high noon"));
 
     }
 
@@ -46,5 +48,18 @@ public class Main {
         return a ;
 
     }
-     }
+       public static boolean reverse(boolean b) {
+
+        if (b){
+            return false;
+        }
+        return true;
+
+    }
+    public static int countWords(String s) {
+        String [] split = s.split(" ");
+        return  split.length;
+
+    }
+}
 
