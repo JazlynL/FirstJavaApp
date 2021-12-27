@@ -21,6 +21,7 @@ public class Main {
         System.out.println(helloName("Gerald"));
         System.out.println(reverse("The only way to be truly satisfied is to do what you believe is great work."));
         System.out.println(triArea(3, 2));
+        System.out.println(divisible(1));
 
     }
 
@@ -123,5 +124,8 @@ public class Main {
      return area;
 
  }
+    public static boolean divisible(int num) {
+        return num%100== 0 ?true:false;
+    }
 }
 
