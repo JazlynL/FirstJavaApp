@@ -22,6 +22,7 @@ public class Main {
         System.out.println(reverse("The only way to be truly satisfied is to do what you believe is great work."));
         System.out.println(triArea(3, 2));
         System.out.println(divisible(1));
+        System.out.println(canCapture(new String[]{"A1", "B2"}));
 
     }
 
@@ -126,6 +127,11 @@ public class Main {
  }
     public static boolean divisible(int num) {
         return num%100== 0 ?true:false;
+    }
+    public static boolean canCapture(String[] rooks) {
+        return (rooks[0].charAt(0) == rooks[1].charAt(0)|| (
+                rooks[0].charAt(1)  == rooks[1].charAt(1)) );
+
     }
 }
 
