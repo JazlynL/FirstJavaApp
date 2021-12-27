@@ -14,6 +14,7 @@ public class Main {
         System.out.println(giveMeSomething("is cooking"));
         System.out.println(reverse(false));
         System.out.println(countWords("It's high noon"));
+        System.out.println(getCount("Celebration"));
 
     }
 
@@ -61,5 +62,25 @@ public class Main {
         return  split.length;
 
     }
+
+
+    public static int getCount(String str) {
+        int vowelsCount = 0;
+
+        String vowels = new String("aeiou");
+        for(int i = 0; i < vowels.length(); i++){
+            for(int j = 0; j < str.length(); j++){
+                if(vowels.charAt(i)==str.charAt(j)){
+                    vowelsCount += 1;
+
+                }
+
+            }
+
+        }
+        return vowelsCount;
+
+    }
+
 }
 
