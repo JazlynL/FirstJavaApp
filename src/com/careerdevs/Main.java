@@ -15,6 +15,7 @@ public class Main {
         System.out.println(reverse(false));
         System.out.println(countWords("It's high noon"));
         System.out.println(getCount("Celebration"));
+        System.out.println(sum(3, 2));
 
     }
 
@@ -79,6 +80,11 @@ public class Main {
 
         }
         return vowelsCount;
+
+    }
+    public static int sum(int a, int b) {
+        int sum = a+b;
+        return sum;
 
     }
 
