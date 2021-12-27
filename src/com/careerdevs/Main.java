@@ -18,6 +18,7 @@ public class Main {
         System.out.println(sum(3, 2));
         System.out.println(isSameNum(2,2));
         System.out.println(calcAge(10));
+        System.out.println(helloName("Gerald"));
 
     }
 
@@ -96,6 +97,10 @@ public class Main {
     }
     public static int calcAge(int age) {
         return age*365;
+
+    }
+    public static String helloName(String name) {
+        return "Hello " + name+ "!";
 
     }
 
