@@ -19,6 +19,7 @@ public class Main {
         System.out.println(isSameNum(2,2));
         System.out.println(calcAge(10));
         System.out.println(helloName("Gerald"));
+        System.out.println(reverse("The only way to be truly satisfied is to do what you believe is great work."));
 
     }
 
@@ -85,6 +86,7 @@ public class Main {
         return vowelsCount;
 
     }
+    //Java algorithims #3
     public static int sum(int a, int b) {
         int sum = a+b;
         return sum;
@@ -101,6 +103,17 @@ public class Main {
     }
     public static String helloName(String name) {
         return "Hello " + name+ "!";
+
+    }
+    public static String reverse(final String str) {
+        char[] reverse = str.toCharArray();
+        StringBuilder sb = new StringBuilder();
+        for (int i = reverse.length-1; i >= 0 ; i--){
+            sb.append(reverse[i]);
+
+        }
+        return  sb.toString();
+
 
     }
 
