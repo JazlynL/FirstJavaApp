@@ -17,6 +17,7 @@ public class Main {
         System.out.println(getCount("Celebration"));
         System.out.println(sum(3, 2));
         System.out.println(isSameNum(2,2));
+        System.out.println(calcAge(10));
 
     }
 
@@ -91,6 +92,10 @@ public class Main {
     public static boolean isSameNum(int x, int y) {
         return x == y  ? true:false;
 
+
+    }
+    public static int calcAge(int age) {
+        return age*365;
 
     }
 
