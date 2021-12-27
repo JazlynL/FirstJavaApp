@@ -20,6 +20,7 @@ public class Main {
         System.out.println(calcAge(10));
         System.out.println(helloName("Gerald"));
         System.out.println(reverse("The only way to be truly satisfied is to do what you believe is great work."));
+        System.out.println(triArea(3, 2));
 
     }
 
@@ -116,6 +117,11 @@ public class Main {
 
 
     }
+ //BONUS questions
+ public static int triArea(int base, int height) {
+     int area = (base*height/2);
+     return area;
 
+ }
 }
 
