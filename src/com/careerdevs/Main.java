@@ -23,6 +23,7 @@ public class Main {
         System.out.println(triArea(3, 2));
         System.out.println(divisible(1));
         System.out.println(canCapture(new String[]{"A1", "B2"}));
+        System.out.println(rev(215));
 
     }
 
@@ -132,6 +133,17 @@ public class Main {
         return (rooks[0].charAt(0) == rooks[1].charAt(0)|| (
                 rooks[0].charAt(1)  == rooks[1].charAt(1)) );
 
+    }
+//Bonus questions number 3
+    public static String rev(int n) {
+
+        int reversed = 0 ;
+        while(n!=0){
+            int num = n%10;
+            reversed = reversed * 10 + num;
+            n /=10;
+        }
+        return ""+Math.abs(reversed);
     }
 }
 
