@@ -24,6 +24,7 @@ public class Main {
         System.out.println(divisible(1));
         System.out.println(canCapture(new String[]{"A1", "B2"}));
         System.out.println(rev(215));
+        System.out.println(differenceMaxMin(new int[]{10, 4, 1, 2, 8, 91}));
 
     }
 
@@ -144,6 +145,21 @@ public class Main {
             n /=10;
         }
         return ""+Math.abs(reversed);
+    }
+
+    public static int differenceMaxMin(int[] arr) {
+        int maxNum = arr[0];
+        int minNum= arr[0];
+        for(int i = 0 ; i < arr.length; i++){
+            if(arr[i] >= maxNum){
+                maxNum = arr[i];
+            }
+            if(arr[i]<minNum){
+                minNum = arr[i];
+            }
+        }
+        return maxNum - minNum;
+
     }
 }
 
