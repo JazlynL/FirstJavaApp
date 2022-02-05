@@ -25,6 +25,7 @@ public class Main {
         System.out.println(canCapture(new String[]{"A1", "B2"}));
         System.out.println(rev(215));
         System.out.println(differenceMaxMin(new int[]{10, 4, 1, 2, 8, 91}));
+        System.out.println(match("hello", "hELLo"));
 
     }
 
@@ -159,6 +160,17 @@ public class Main {
             }
         }
         return maxNum - minNum;
+
+    }
+    public static boolean match(String str1, String str2) {
+        String word1 = str1.toLowerCase();
+        String word2 = str2.toLowerCase();
+
+        if (word1.equals(word2)){
+            return true;
+        }
+        return false;
+
 
     }
 }
