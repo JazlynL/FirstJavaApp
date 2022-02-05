@@ -27,6 +27,7 @@ public class Main {
         System.out.println(differenceMaxMin(new int[]{10, 4, 1, 2, 8, 91}));
         System.out.println(match("hello", "hELLo"));
         System.out.println(makesTen(9, 10));
+        System.out.println(numberSyllables("beau-ti-ful"));
 
     }
 
@@ -179,6 +180,11 @@ public class Main {
             return true;
         }
         return false;
+    }
+    public static int numberSyllables(String word) {
+        String [] newWord = word.split("-");
+        return  newWord.length;
+
     }
 }
 
