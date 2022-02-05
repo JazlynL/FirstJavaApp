@@ -26,6 +26,7 @@ public class Main {
         System.out.println(rev(215));
         System.out.println(differenceMaxMin(new int[]{10, 4, 1, 2, 8, 91}));
         System.out.println(match("hello", "hELLo"));
+        System.out.println(makesTen(9, 10));
 
     }
 
@@ -172,6 +173,12 @@ public class Main {
         return false;
 
 
+    }
+    public static boolean makesTen(int a, int b) {
+        if(a+b == 10|| a == 10|| b == 10){
+            return true;
+        }
+        return false;
     }
 }
 
