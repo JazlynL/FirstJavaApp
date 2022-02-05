@@ -28,6 +28,7 @@ public class Main {
         System.out.println(match("hello", "hELLo"));
         System.out.println(makesTen(9, 10));
         System.out.println(numberSyllables("beau-ti-ful"));
+        System.out.println(hackerSpeak("hi there"));
 
     }
 
@@ -184,6 +185,11 @@ public class Main {
     public static int numberSyllables(String word) {
         String [] newWord = word.split("-");
         return  newWord.length;
+
+    }
+    public static String hackerSpeak(String str) {
+        String strNew = str.replace('a','4').replace('e', '3').replace('i','1').replace('o','0').replace('s','5');
+        return strNew;
 
     }
 }
