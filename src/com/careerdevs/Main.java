@@ -1,7 +1,5 @@
 package com.careerdevs;
 
-import java.util.Enumeration;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class Main {
         System.out.println(reverse(false));
         System.out.println(countWords("It's high noon"));
         System.out.println(getCount("Celebration"));
-        System.out.println(sum(3, 2));
+//        System.out.println(sum(3, 2));
         System.out.println(isSameNum(2,2));
         System.out.println(calcAge(10));
         System.out.println(helloName("Gerald"));
@@ -29,6 +27,9 @@ public class Main {
         System.out.println(makesTen(9, 10));
         System.out.println(numberSyllables("beau-ti-ful"));
         System.out.println(hackerSpeak("hi there"));
+
+        recursionJ(10);
+        System.out.println(recursionJ(10));
 
     }
 
@@ -96,11 +97,13 @@ public class Main {
 
     }
     //Java algorithims #3
-    public static int sum(int a, int b) {
-        int sum = a+b;
-        return sum;
-
-    }
+//    public static int sum() {
+//        int a = 0;
+//        int b = 1;
+//        int sum = a+b;
+//        return sum;
+//
+//    }
     public static boolean isSameNum(int x, int y) {
         return x == y  ? true:false;
 
@@ -191,6 +194,15 @@ public class Main {
         String strNew = str.replace('a','4').replace('e', '3').replace('i','1').replace('o','0').replace('s','5');
         return strNew;
 
+    }
+
+
+    public static int recursionJ( int n){
+        if( n == 0){
+            return n;
+        }else{
+            return  n + recursionJ(n - 1);
+        }
     }
 }
 
