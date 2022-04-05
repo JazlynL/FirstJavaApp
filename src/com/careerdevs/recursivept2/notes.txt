@@ -1,0 +1,48 @@
+
+Discount Algorithims
+// find discounted price
+		// double discountPercentage = percentage%100;
+		// you are able to make java compilier read an int as a float by adding f to the int.
+
+		float disCount = percentage / 100f;
+		float overAllPrice = price * disCount;
+		float moneySaved = price -  overAllPrice;
+
+		return moneySaved;
+
+		// step 2 code b rounding discounted prices
+
+		float input = 123.456;
+//
+//        input = input * 100;
+////        input = Math.floor(input); // how do we round number -> math.round
+//        input = input % 1 // 12345.67 -> 12345
+//        input - input / 100; 12345 -> 123.45
+
+
+
+//Jackpot Algo
+
+
+
+public static boolean testJackpot(String[] result) {
+
+	return isEveryElementAlike(result);
+
+		// the way it was done in class
+	}
+
+		public static boolean isEveryElementAlike(String [] array ){
+			// we access the first element this way.
+			String element = array[0];
+
+			//start with a for loop
+			for(int i = 0 ; i < array.length;i++){
+				if(!element.equals(array[i])){
+					return false;
+				}
+
+
+			}
+			return true;
+		}
