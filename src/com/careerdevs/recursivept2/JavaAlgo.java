@@ -18,16 +18,16 @@ public class JavaAlgo {
 
 
 
-    public static boolean testJackpot(String[] result) {
+    public static boolean testJackpot(StringValueOf[] result) {
 
         return isEveryElementAlike(result);
 
         // the way it was done in class
     }
 
-    public static boolean isEveryElementAlike(String [] array ){
+    public static boolean isEveryElementAlike(StringValueOf[] array ){
         // we access the first element this way.
-        String element = array[0];
+        StringValueOf element = array[0];
 
         //start with a for loop
         for(int i = 0 ; i < array.length;i++){

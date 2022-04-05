@@ -1,7 +1,7 @@
 package com.careerdevs.recursivept2;
 
 public class RockPaperGame {
-    public static String rps(String s1, String s2) {
+    public static StringValueOf rps(StringValueOf s1, StringValueOf s2) {
 
 	/*	rps("rock", "paper") ➞ "Player 2 wins"
 
