@@ -1,5 +1,7 @@
 package com.careerdevs;
 
+import com.careerdevs.recursivept2.FindMinAndMaxVal;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,12 +19,12 @@ public class Main {
         System.out.println(isSameNum(2,2));
         System.out.println(calcAge(10));
         System.out.println(helloName("Gerald"));
-        System.out.println(reverse("The only way to be truly satisfied is to do what you believe is great work."));
+//        System.out.println(reverse("The only way to be truly satisfied is to do what you believe is great work."));
         System.out.println(triArea(3, 2));
         System.out.println(divisible(1));
         System.out.println(canCapture(new String[]{"A1", "B2"}));
         System.out.println(rev(215));
-        System.out.println(differenceMaxMin(new int[]{10, 4, 1, 2, 8, 91}));
+//        System.out.println(differenceMaxMin(new int[]{10, 4, 1, 2, 8, 91}));
         System.out.println(match("hello", "hELLo"));
         System.out.println(makesTen(9, 10));
         System.out.println(numberSyllables("beau-ti-ful"));
@@ -117,17 +119,7 @@ public class Main {
         return "Hello " + name+ "!";
 
     }
-    public static String reverse(final String str) {
-        char[] reverse = str.toCharArray();
-        StringBuilder sb = new StringBuilder();
-        for (int i = reverse.length-1; i >= 0 ; i--){
-            sb.append(reverse[i]);
 
-        }
-        return  sb.toString();
-
-
-    }
  //BONUS questions
  public static int triArea(int base, int height) {
      int area = (base*height/2);
@@ -154,20 +146,7 @@ public class Main {
         return ""+Math.abs(reversed);
     }
 
-    public static int differenceMaxMin(int[] arr) {
-        int maxNum = arr[0];
-        int minNum= arr[0];
-        for(int i = 0 ; i < arr.length; i++){
-            if(arr[i] >= maxNum){
-                maxNum = arr[i];
-            }
-            if(arr[i]<minNum){
-                minNum = arr[i];
-            }
-        }
-        return maxNum - minNum;
 
-    }
     public static boolean match(String str1, String str2) {
         String word1 = str1.toLowerCase();
         String word2 = str2.toLowerCase();
