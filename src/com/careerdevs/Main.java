@@ -1,11 +1,27 @@
 package com.careerdevs;
 
+import com.careerdevs.recursivept2.Concat;
 import com.careerdevs.recursivept2.FindMinAndMaxVal;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+
+       // 05/02/2022 Challenge,edabitScoringChallenge.
+        edabitScoringChallange.calculateScores("ABC");
+
+
+      //  System.out.println(calculateScores(new int[]{1, 1, 1}));
+
+
+
+        // concatinating two words in parameters.
+        System.out.println(Concat.getWord("gove", "rnor"));
+
+
+
+
         System.out.println("Hello GITHUB");
         System.out.println(getFirstValue(new int[]{2, 4, 6, 8, 10}));
         System.out.println(addition(2 ));
