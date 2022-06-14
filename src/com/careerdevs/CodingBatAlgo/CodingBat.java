@@ -1,4 +1,4 @@
-package com.careerdevs.recursivept2.CodingBatAlgo;
+package com.careerdevs.CodingBatAlgo;
 
 public class CodingBat {
     public int caughtSpeeding(int speed, boolean isBirthday) {
