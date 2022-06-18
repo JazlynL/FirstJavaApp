@@ -1,4 +1,4 @@
-package com.careerdevs.recursivept2.CodingBatAlgo;
+package com.careerdevs.CodingBatAlgo;
 
 public class getXO {
     public static boolean getXO (String str) {
