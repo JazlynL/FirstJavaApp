@@ -33,4 +33,25 @@ public class ThreeTimes {
       // return result.
         return result;
     }
+
+    //Alternative way to solve it
+    public String frontTimesNumTwo(String str, int n) {
+
+        String frontLen = "";
+        if(str.length() < 3){
+            frontLen+= str;
+        }else{
+            frontLen = str.substring(0,3);
+        }
+
+        String finalRes = "";
+
+
+        for(int i = 0 ; i < n; i++){
+            finalRes+= frontLen;
+
+        }
+        return finalRes;
+
+    }
 }
