@@ -10,7 +10,7 @@ public class ComparingTwo {
 
         // we are going to record the last two letters in the string.using substring method
 
-        String newStr = str.substring(str.length()-2,str.length());
+        String newStr = str.substring(str.length()-2,str;
 
         int countByTwo=0;
 
