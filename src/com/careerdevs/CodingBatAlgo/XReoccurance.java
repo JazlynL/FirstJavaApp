@@ -17,4 +17,23 @@ public class XReoccurance {
         return counterX;
 
     }
+
+    // refactored code
+
+    int countXXTwo(String str) {
+
+        int counterStr = 0;
+        String newStr = "";
+        for(int i = 0 ; i < str.length()-1;i++){
+            // using substring to create a newStr
+            if(str.substring(i,i+2).equals("xx")){
+                newStr+= str;
+                counterStr++;
+            }
+
+        }
+        return counterStr;
+
+
+    }
 }
