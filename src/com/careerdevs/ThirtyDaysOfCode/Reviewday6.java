@@ -15,9 +15,11 @@ public class Reviewday6 {
             String newStr;
 
             for(int i = 0 ; i < input;i++){
-
+           // new line
                 newStr = scan.nextLine();
+               // empty string even
                 String even ="";
+                //empty string odd
                 String odd = "" ;
 
                 for(int j = 0 ; j< newStr.length();j++){
