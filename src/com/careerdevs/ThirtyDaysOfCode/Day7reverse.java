@@ -23,10 +23,11 @@ public class Day7reverse {
                 int arrItem = Integer.parseInt(arrTemp[i]);
                 arr.add(arrItem);
             }
-            for( int i = n-1 ; i >=0 ; i--){
+            for (int i = n - 1; i >= 0; i--) {
                 System.out.println(arr.get(i));
             }
 
 
         }
     }
+}
