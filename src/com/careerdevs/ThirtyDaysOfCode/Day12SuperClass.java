@@ -1,14 +1,16 @@
 package com.careerdevs.ThirtyDaysOfCode;
 
 public class Day12SuperClass {
-    class Student extends Person{
+    class Student {
 
         private int[] testScores;
 
 
         public Student (String firstName, String lastName, int id, int [] testScores){
-            // super acts as  a constructor,
-            // we are using super to
+
+
+            // super acts as  a constructor, to a subclass that is extended,
+            // we are using super to inherit from a class to a subclass  of the main class
             super(firstName, lastName, id);
             this.testScores = testScores;
         }
@@ -39,13 +41,15 @@ public class Day12SuperClass {
             // //     if(newStr.charAt(i) == 'T'){
 
             // //     }
-            //  iterate through  testScores array ;
-            // intialize  a   var to the iterated data extreacted from the array.
 
 
+
+            // we created an empty int variable
             int  grade = 0 ;
 
+            // then we iterated it through the length
             for(int i = 0; i < testScores.length;i++){
+                // we use the concat operator  to  add the iterated data from the students
                 grade += testScores[i];
             }
 
@@ -53,9 +57,10 @@ public class Day12SuperClass {
             int newGrade =  grade/testScores.length;
 
 
-
+        // creating an empty character variable to eventually store the  Letter grades by student
             char finalGrade = 0;
 
+          // setting the conditonals based on the value we are expecting with the letter grades.
             if( newGrade > 0 && newGrade < 40){
                 finalGrade = 'T';
             }else if (newGrade >= 40 && newGrade < 55){
@@ -69,6 +74,7 @@ public class Day12SuperClass {
             }else {
                 finalGrade ='O';
             }
+            // then return the char value
 
             return finalGrade;
         }
