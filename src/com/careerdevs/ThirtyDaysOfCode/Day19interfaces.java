@@ -5,6 +5,9 @@ package com.careerdevs.ThirtyDaysOfCode;
 A interface is a collection of abstract methods
 no Implementations nor constructors.
 its a template of a certain functionality..
+interfaces can extend to other interfaces..
+Kind of like inheritance.
+
 * */
 public class Day19interfaces {
     public int divisorSum(int n) {
