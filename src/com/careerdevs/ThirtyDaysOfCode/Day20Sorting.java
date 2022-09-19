@@ -35,6 +35,9 @@ public class Day20Sorting {
 
                 for (int j = 0 ; j < n -1 ; j++)
                     if (a.get(j) > a.get(j+1)){
+
+                    }
+                // how we  are able to sort in list
                         Collections.swap(a,j,j+1);
                         numSwaps++;
                     }
