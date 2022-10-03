@@ -31,6 +31,7 @@ public class WeekTwoLonelyInteger {
 
 
         for(Integer i : a){
+            // we using this conditional to see
             if(!set.contains(i)){
                 // if the value does not match within the set we want to add it
                 set.add(i);
