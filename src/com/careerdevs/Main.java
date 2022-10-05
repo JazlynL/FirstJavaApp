@@ -11,6 +11,7 @@ public class Main {
        // 05/02/2022 Challenge,edabitScoringChallenge.
         edabitScoringChallange.calculateScores("ABC");
 
+        //test comment
 
       //  System.out.println(calculateScores(new int[]{1, 1, 1}));
 
