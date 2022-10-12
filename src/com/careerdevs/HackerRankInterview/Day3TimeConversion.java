@@ -9,11 +9,14 @@ public class Day3TimeConversion {
 
 
 
-        //12:00:00AM on a 12-hour clock is 00:00:00 on a 24-hour clock.
-        // 12:00:00PM on a 12-hour clock is 12:00:00 on a 24-hour clock.
-        //Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
-        //Complete the timeConversion function in the editor below. It should return a new string representing the ut time in 24 hour format.
-//timeConversion has the following parameter(s):
+        //psuedo code
+        // we have a regular 12 am to 12 pm clock format.
+        // within this function we want to create a converted time from the regular 12 pm - 12 am to     military time
+        // military time has a 24 hour clock, so any time after 12 pm in the afternoon will have to be converted
+        // so we will be taking in a input as a string  that is currently in regular 12 hour clock format (hh:mm:ssAm or hh:mm:ssPm)
+// once we take in the input we want to find key things  that indicate that we will be converting this from a regular clock format to military time
+// one key indicator would be the PM time stamp , being able to indentify that will be one of the biggest parts of the conversion process
+// most important part of the conversion process is switching the value for the firs two values in the string
 
 
         if(!s.substring(0, 2).contains("12") && s.contains("PM") ){
