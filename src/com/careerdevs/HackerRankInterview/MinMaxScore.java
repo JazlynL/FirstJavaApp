@@ -12,6 +12,15 @@ public class MinMaxScore {
 
         public static List<Integer> breakingRecords(List<Integer> scores) {
             // Write your code here
+            // maria is playing a game of basketball, in this game of basketball she will be keeping score of all her point earned during a game.
+            // from the first amount of points of her first game will be the determining factor on how we will record the rest of the points she has gained throughout the game.
+            // We have two things to take account of from the first  game the min and max score gained from after thr first game
+            // So we will intiliaze two values one is the min score gained from the game and the max score gained from the game, these vars will hold the count of max points from the previous records, and the second var value will record the least amount of points stored.
+            // we want to iterate through the stored point inside the arraylist.
+            // we want to identify the first index in the arraylist
+            // once this value is identified we will compare it to the rest of the values in the list.
+            // through iteration we will determine whather or not the data recorded after game 1 is greater than or less than.
+            // once these values are determined we will want to then return the value with the breaking the most points at index 0 and the least points at index 1;
 
             // keep track of points
             int minPoints = 0;
