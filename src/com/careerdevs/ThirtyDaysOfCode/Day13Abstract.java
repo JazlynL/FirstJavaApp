@@ -14,8 +14,10 @@ import java.awt.print.Book;
 import static jdk.javadoc.internal.doclets.formats.html.markup.HtmlStyle.title;
 
 public class Day13Abstract {
+    //parent class
 
     class  MyBook extends Book {
+        //subclass
         int price;
 
         /**
