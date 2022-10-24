@@ -15,10 +15,12 @@ class Result {
 
 
 
- // Big note - this
+ // Big note - this doesnt read the index this has the exact value.
+        // so instead of index  ike a regular for loop , for each gives the exact value
     for(Integer numOccurances : arr){
-
-
+   //alt version
+        // int fakeNum = arr.get(numoccurances)
+                              // second param will be fakeNum + 1
      results.set(numOccurances,results.get(numOccurances) + 1);
 
 
