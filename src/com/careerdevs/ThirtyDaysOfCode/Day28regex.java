@@ -29,8 +29,8 @@ public class Solution {
                  This method tells whether or not this string matches the given regulaar expression.
                  It will ultimately return  a boolean value.
                  it will  only return if its true.
-                A regex that helped me solve this was ( .*) this lets you specify the exact string pattern you want to find
-                it works as a wild card.
+                 A regex that helped me solve this was ( .*) this lets you specify the exact string pattern you want to find
+                 it works as a wild card.
                   */
                 if(emailID.matches("(.*)@gmail.com")){
                     fNames.add(firstName);
