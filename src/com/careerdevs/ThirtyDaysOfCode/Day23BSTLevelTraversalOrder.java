@@ -35,7 +35,7 @@ public class Day23BSTLevelTraversalOrder {
             // opposite of peek which will just retrieve the first element
             // whatever value we pull from the q ,
             Node temp = q.poll();
-
+n
             // this how we are able to print the data
             System.out.print(temp.data + " ");
 
