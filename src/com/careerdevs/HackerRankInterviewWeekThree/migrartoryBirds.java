@@ -11,6 +11,7 @@ class Result {
         // Write your code here
         Map<Integer,Integer> findNum = new HashMap<>();
 
+        // solved with hashmap
         for(int i = 0 ; i < arr.size();i++){
             if(findNum.containsKey(arr.get(i))){
                 findNum.put(arr.get(i),findNum.get(arr.get(i))+1);
