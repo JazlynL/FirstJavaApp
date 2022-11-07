@@ -25,7 +25,7 @@ class Result {
 
             int birthDaystorage = 0;
 
-            //
+            //we use the i +m due to the comparison to the birth month of the indiviual.
             for(int j = i ; j <i + m ; j++ )
                 birthDaystorage += s.get(j);
 
