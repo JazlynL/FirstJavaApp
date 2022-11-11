@@ -27,6 +27,7 @@ public class Day2MinandMaxsolution {
 
 
     for(int i = 0 ; i < arr.size();i++){
+        // we need this line very important for comparison.
         sumF += arr.get(i);
         //  System.out.println(sumF);
         if( arr.get(i) < minSum)
