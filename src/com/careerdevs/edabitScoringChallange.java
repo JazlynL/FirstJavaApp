@@ -16,6 +16,7 @@ public class edabitScoringChallange {
                 player3++;
             }
         }
+        // review
         return new int [] {player1,player2,player3};
 
 
