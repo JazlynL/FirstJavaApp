@@ -39,4 +39,28 @@ public class Day3TimeConversion {
         return s.substring(0, s.length()-2);
 
     }
+
+    public static String timeConversion(String s) {
+        // Write your code here
+
+        String newStr = "";
+
+        int number = 0;
+
+
+        if( s.substring(0, 2).equals("12") && s.substring(s.length()-2, s.length()).equals("AM")){
+            newStr = "00" + s.substring(2, s.length()-2);
+
+        }else{
+            number = Integer.parseInt(s.substring(0, 2)) + 12;
+            newStr =
+                    String.valueOf( number )+ s.substring(2, s.length()-2);
+        }
+
+
+
+
+        return newStr;
+
+    }
 }
