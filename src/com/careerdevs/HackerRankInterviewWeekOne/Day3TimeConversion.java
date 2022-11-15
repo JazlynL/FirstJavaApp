@@ -52,12 +52,14 @@ public class Day3TimeConversion {
             newStr = "00" + s.substring(2, s.length()-2);
 
         }else{
-            number = Integer.parseInt(s.substring(0, 2)) + 12;
-            newStr =
-                    String.valueOf( number )+ s.substring(2, s.length()-2);
+
+            newStr =  s.substring(0,2)+ s.substring(2, s.length()-2);
         }
 
-
+        if(s.substring(s.length()-2, s.length()).contains("PM") && !s.substring(0, 2).contains("12")){
+            number = Integer.valueOf(s.substring(0, 2)) + 12;
+            newStr = String.valueOf(number) + s.substring(2, s.length()-2);
+        }
 
 
         return newStr;
