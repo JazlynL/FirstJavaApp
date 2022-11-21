@@ -1,4 +1,5 @@
 
+
 public static String kangaroo(int x1, int v1, int x2, int v2) {
         // Write your code here
 
@@ -6,21 +7,41 @@ public static String kangaroo(int x1, int v1, int x2, int v2) {
 
 
 
-        int kangrooTwo = x2 + v2;
+        int kangrooTwo = x2;
 
 
-        for(int i = x1 ; i < x1 + x2; i += v1){
+        for(int i = x1 ; i <=  kangrooTwo; i += v1){
 
 
-        if( kangrooTwo  > i  ){
-        kangrooTwo  =  v2 += 2 ;
+        if( kangrooTwo  > i ){
 
-        System.out.println(kangrooTwo);
+        kangrooTwo  += v2 ;
+
+
+
+        }
+
+
+        if(kangrooTwo == i){
+        return "YES";
         }
 
 
 
         }
+
+
+
+
+        return "NO";
+
+        }
+
+
+
+
+
+}
 
 
 
