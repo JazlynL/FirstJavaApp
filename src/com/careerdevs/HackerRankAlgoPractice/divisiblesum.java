@@ -15,7 +15,7 @@ public static int divisibleSumPairs(int n, int k, List<Integer> ar) {
        
         if(i < j){
             
-            // using () Pemdas
+            // using () Pemdas a
         if((divisu + ar.get(j)) % k == 0){
         count++;
         }
