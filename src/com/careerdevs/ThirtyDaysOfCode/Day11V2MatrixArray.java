@@ -37,3 +37,17 @@ public class Solution {
         System.out.println(maxVal);
     }
 }
+// refactord solution.
+int maxVal = -63;
+
+      for(int i = 0 ;i < 4 ; i++){
+        for(int j = 0 ;  j < 4;j++){
+        int hourGlass = 0;
+        hourGlass = arr.get(i).get(j) + arr.get(i).get(j+1) + arr.get(i).get(j+2) +
+        arr.get(i+1).get(j+1) +
+        arr.get(i+2).get(j) + arr.get(i+2).get(j+1) + arr.get(i+2).get(j+2);
+        maxVal =  Math.max(maxVal, hourGlass);
+
+        }
+        }
+        System.out.println(maxVal);
