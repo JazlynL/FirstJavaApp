@@ -16,7 +16,7 @@ public class ComparingTwo {
 
 
         // then will begin iteration but iterate through everthing but the last two letters
-
+ // coding bat algo.
         for(int i = 0 ; i <  str.length()-2;i++){
             // we are going to compare these two strings
             if(newStr.equals(str.substring(i,i+2))){
