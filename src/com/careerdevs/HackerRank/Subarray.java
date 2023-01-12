@@ -40,4 +40,31 @@ public class Solution {
 
         }
     }
+    // solving subarrary using a standard array .
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scanny = new Scanner(System.in);
+        int n = scanny.nextInt();
+        int [] arr = new int[n];
+        for(int i = 0 ; i< arr.length;i++){
+            arr[i] = scanny.nextInt();
+        }
+        int counter = 0;
+
+        for(int i = 0 ; i< n;i++){
+            int currentSum = 0;
+            for(int j = i; j < n;j++){
+                //  currentSum +=arr[j];
+                currentSum = arr[j] + currentSum;
+                if(currentSum < 0){
+                    //  System.out.println(currentSum);
+                    // System.out.println(arr[j]);
+
+
+                    counter++;
+                }
+            }
+        }
+        System.out.println(counter);
+    }
 }
