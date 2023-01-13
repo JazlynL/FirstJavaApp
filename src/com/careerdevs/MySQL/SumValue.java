@@ -1,0 +1,1 @@
+select sum(population) from city where city.district = 'California';
