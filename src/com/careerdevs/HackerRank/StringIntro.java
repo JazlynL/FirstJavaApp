@@ -35,6 +35,8 @@ public class Solution {
         }
 
         if(A.length() < B.length()&& A.charAt(0)==B.charAt(0)){
+
+          // you can use a compare too
             finalResult="No";
 
 
