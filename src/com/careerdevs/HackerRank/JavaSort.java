@@ -47,22 +47,27 @@ public class Solution
             }
         };
 
+        Collections.sort(studentList,newStudent);
+
+
 
         //compare by name
-
         Comparator<Student> compareByNComparator = new Comparator<Student>() {
             public int compare(Student o1, Student o2) {
 
+                int comp = Double.compare(o2.getCgpa(), o1.getCgpa());
 
-                return o1.getFname().compareTo(o2.getFname());
+                if(comp == 0){
+                    comp = o1.getFname().compareTo(o2.getFname());
+                }
+
+                return comp;
             }
 
-
-
         };
-        Collections.sort(studentList,newStudent);
 
-        // Collections.sort(studentList, compareByNComparator);
+
+        Collections.sort(studentList, compareByNComparator);
 
 
 
@@ -75,24 +80,14 @@ public class Solution
             }
         };
 
-        // Collections.sort(studentList,compareById);
-
-
-
 
         for(Student st: studentList){
 
-            if(st.getCgpa() == st.getCgpa()){
-                Collections.sort(studentList, compareByNComparator);
-            }
-
-            // if(st.getFname() == st.getFname()){
-            //     Collections.sort(studentList, compareById);
-            // }
-
-            System.out.println(st.getFname() + st.getCgpa() + );
+            System.out.println(st.getFname());
         }
+
 
     }
 }
+
 
