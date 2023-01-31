@@ -86,6 +86,26 @@ public class Solution
             System.out.println(st.getFname());
         }
 
+     //big INTEGER algorithim
+        public class Solution {
+
+            public static void main(String[] args) {
+                /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+                Scanner scanny = new Scanner(System.in);
+                String firstInt = scanny.nextLine();
+                String nextInt = scanny.nextLine();
+
+                BigInteger inter = new BigInteger(firstInt);
+                BigInteger inter2 = new BigInteger(nextInt);
+
+
+
+                System.out.println(inter.add(inter2));
+                System.out.println(inter.multiply(inter2));
+            }
+        }
+
+
 
     }
 }
