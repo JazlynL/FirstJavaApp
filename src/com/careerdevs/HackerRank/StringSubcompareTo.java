@@ -13,7 +13,7 @@ public class Solution {
 
         String  [] sbArr = new String [s.length() - (k-1)];
 
-
+        //studying lexographical measurements of  characters java
         for(int i = 0 ; i < s.length();i++){
             String parts = "";
             for(int j = i ; j < s.length();j++){
