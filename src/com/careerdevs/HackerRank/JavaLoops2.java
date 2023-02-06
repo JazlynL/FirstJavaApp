@@ -15,6 +15,7 @@ class Solution{
             System.out.print(finalSum + " ");
 
             for(int j = 1; j < n ;j++){
+                //math pow usage
                 finalSum += Math.pow(2, j)*b;
                 System.out.print(finalSum+ " ");
 
