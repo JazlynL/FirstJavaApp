@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.Scanner;
+
 public class ArrayList {
 
 import java.io.*;
@@ -14,7 +17,7 @@ import java.util.regex.*;
 
             List<List<String>> list = new ArrayList<>();
             List<List<String>> querLists = new ArrayList<>();
-
+            //importing list class
             List<String> listy1 = new ArrayList<>();
             List<String> listy2 = new ArrayList<>();
 
