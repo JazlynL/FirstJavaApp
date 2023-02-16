@@ -1,1 +1,0 @@
-select floor(avg(city.population)) from city;
