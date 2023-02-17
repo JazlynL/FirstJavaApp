@@ -6,7 +6,9 @@ public class ScanIntializer {
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             int i = scan.nextInt();
+
             Double d = scan.nextDouble();
+            // import  static class
             scan.nextLine();
             String s = scan.nextLine();
 
